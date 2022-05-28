@@ -1,0 +1,17 @@
+<app-header></app-header>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened class="sidebar">   <app-sidebar></app-sidebar> </mat-drawer>
+  <mat-drawer-content class="main-content">
+    
+    <router-outlet></router-outlet>
+    <!-- <h2 #headline>This is ViewChild Tutorial</h2>
+    <app-content-projection>
+      This content is from app content.html
+      <p>This is a selected content for role</p>
+      <ng-template #admin>
+        This is for admin Content
+      </ng-template>
+    </app-content-projection> -->
+  </mat-drawer-content>
+</mat-drawer-container>
+<app-footer></app-footer>

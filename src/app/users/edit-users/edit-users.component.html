@@ -1,0 +1,29 @@
+<mat-card>
+    <div *ngIf="dataloaded">
+        <form [formGroup]="edituserform" (submit)="updateUser()">
+            <mat-card-title>Update New User</mat-card-title>
+            <mat-card-content>
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="name" formControlName='username'>
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email Address</mat-label>
+                        <input matInput placeholder="email" formControlName='email'>
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <!-- <mat-hint>Hint</mat-hint> -->
+                    </mat-form-field>
+                </p>
+                <p>
+                    <button mat-raised-button color="primary">Update User</button>
+                </p>
+            </mat-card-content>
+        </form>
+
+    </div>
+</mat-card>

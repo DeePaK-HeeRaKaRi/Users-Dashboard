@@ -1,0 +1,11 @@
+<p>view-users works!</p>
+<h3>{{ viewUsers | json}}</h3>
+<!-- <div *ngIf="viewUsers">
+    <h3><span class='space'>Name</span>{{ viewUsers.name}}</h3>
+    <h3><span class='space'>Email</span>{{ viewUsers.email}}</h3>
+    <h3><span class='space'>Address</span>{{ viewUsers.address.street}}</h3>
+    <h3><span class='space'>Mobile.No</span>{{ viewUsers.phone}}</h3>
+</div> -->
+
+<mat-card *ngIf="viewUsers">{{ viewUsers.name}} &nbsp; {{ viewUsers.email}} &nbsp; {{ viewUsers.address.street}} &nbsp;{{
+    viewUsers.phone}}</mat-card>
